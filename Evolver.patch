@@ -1,0 +1,45 @@
+From 0d2d9c70db0336cd4710da45f0601c0cc46b38b6 Mon Sep 17 00:00:00 2001
+From: Ahmet033 <261602157+yildizahmet033-commits@users.noreply.github.com>
+Date: Tue, 24 Nov 2026 00:24:24 +0300
+Subject: [PATCH] Evolver: Add screen saturation and resolution strings
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_0162zUP5ing4joHDwXBhLEKM
+---
+ res/values-tr-rTR/evolution_strings.xml | 6 ++++++
+ res/values/evolution_strings.xml        | 6 ++++++
+ 2 files changed, 12 insertions(+)
+
+diff --git a/res/values-tr-rTR/evolution_strings.xml b/res/values-tr-rTR/evolution_strings.xml
+index 02a7403..4038cd2 100644
+--- a/res/values-tr-rTR/evolution_strings.xml
++++ b/res/values-tr-rTR/evolution_strings.xml
+@@ -1310,4 +1310,10 @@
+     <string name="screenshot_clipboard_only_summary">Depolamak yerine ekran görüntüsünü panoya kopyala</string>
+     <string name="hide_status_bar_in_screenshot_title">Ekran görüntülerinde durum çubuğunu gizle</string>
+     <string name="hide_status_bar_in_screenshot_summary">Tam ekran görüntülerinden durum çubuğu alanını kırp</string>
++
++    <!-- Screen saturation and resolution -->
++    <string name="screen_saturation_title">Ekran doygunluğu</string>
++    <string name="display_resolution_title">Görüntü çözünürlüğü</string>
++    <string name="display_resolution_fhd">FHD+ (%1$d × %2$d)</string>
++    <string name="display_resolution_wqhd">WQHD+ (%1$d × %2$d)</string>
+ </resources>
+diff --git a/res/values/evolution_strings.xml b/res/values/evolution_strings.xml
+index 016e0e3..fccd86a 100644
+--- a/res/values/evolution_strings.xml
++++ b/res/values/evolution_strings.xml
+@@ -1720,4 +1720,10 @@
+     <!-- Lockscreen lock icon -->
+     <string name="lockscreen_hide_lock_icon_title">Hide lock icon</string>
+     <string name="lockscreen_hide_lock_icon_summary">Hide the lock and unlock icons on the lockscreen while keeping the fingerprint icon visible</string>
++
++    <!-- Screen saturation and resolution -->
++    <string name="screen_saturation_title">Screen saturation</string>
++    <string name="display_resolution_title">Display resolution</string>
++    <string name="display_resolution_fhd">FHD+ (%1$d × %2$d)</string>
++    <string name="display_resolution_wqhd">WQHD+ (%1$d × %2$d)</string>
+ </resources>
+-- 
+2.56.1
+
