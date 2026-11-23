@@ -172,6 +172,18 @@
             settings:controller="com.android.settings.display.ColorModePreferenceController"
             settings:keywords="@string/keywords_color_mode"/>
 
+        <org.evolution.settings.preferences.CustomSeekBarPreference
+            android:key="screen_saturation"
+            android:title="@string/screen_saturation_title"
+            android:persistent="false"
+            android:defaultValue="200"
+            android:max="200"
+            settings:min="100"
+            settings:interval="5"
+            settings:units="%"
+            settings:continuousUpdates="true"
+            settings:controller="org.evolution.settings.display.saturation.ScreenSaturationPreferenceController" />
+
         <lineageos.preference.LineagePartsPreference
             android:key="live_display_color_profile"
             settings:replacesKey="color_mode"
@@ -226,6 +238,12 @@
             android:fragment="com.android.settings.display.ScreenResolutionFragment"
             settings:keywords="@string/keywords_screen_resolution"
             settings:controller="com.android.settings.display.ScreenResolutionController"/>
+
+        <ListPreference
+            android:key="display_resolution"
+            android:title="@string/display_resolution_title"
+            android:persistent="false"
+            settings:controller="org.evolution.settings.display.resolution.DisplayResolutionPreferenceController" />
 
         <Preference
             android:key="screen_refresh_rate"

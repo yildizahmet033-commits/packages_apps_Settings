@@ -247,6 +247,17 @@
             <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
         </activity-alias>
 
+        <!-- Screen saturation -->
+        <receiver
+            android:name="org.evolution.settings.display.saturation.ScreenSaturationReceiver"
+            android:exported="false"
+            android:directBootAware="true">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
         <receiver android:name=".SettingsInitialize"
             android:exported="true">
             <intent-filter>
